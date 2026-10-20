@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="message">First Message</p>
+    <p class="message">Second Message</p>
+    <p  class="message">Third Message</p>
+
+    <script>
+        let messages = document.querySelectorAll(".message");
+        messages.forEach(function(message){
+            message.textContent = "Welcome Students";
+        });
+    </script>
+</body>
+</html>
