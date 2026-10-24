@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let i = 1; i <= 5; i++) {
+            let marks = Number(prompt("Enter marks:"));
+            let grade;
+
+            if (marks >= 90) {
+                grade = "Grade A";
+            } else if (marks >= 75) {
+                grade = "Grade B";
+            } else if (marks >= 50) {
+                grade = "Grade C";
+            } else {
+                grade = "Fail";
+            }
+
+            console.log("Marks: " + marks);
+            console.log("Result: " + grade);
+        }
+    </script>
+</body>
+</html>
