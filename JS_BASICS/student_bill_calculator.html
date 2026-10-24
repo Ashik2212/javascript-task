@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const notebookPrice = 80;
+        const penPrice = 20;
+        const pencilPrice = 10;
+
+        let notebookQuantity = Number(prompt("Enter the quantity of notebooks:"));
+        let penQuantity = Number(prompt("Enter the quantity of pens:"));
+        let pencilQuantity = Number(prompt("Enter the quantity of pencils:"));
+
+        let notebookCost = notebookPrice * notebookQuantity;
+        let penCost = penPrice * penQuantity;
+        let pencilCost = pencilPrice * pencilQuantity;
+
+        let totalBill = notebookCost + penCost + pencilCost;
+
+        const amountPaid = 500;
+
+        let remainingAmount = amountPaid - totalBill;
+
+        console.log("STUDENT BILL");
+        console.log("Notebook Price: ₹" + notebookPrice);
+        console.log("Notebook Quantity: " + notebookQuantity);
+        console.log("Notebook Cost: ₹" + notebookCost);
+
+        console.log("Pen Price: ₹" + penPrice);
+        console.log("Pen Quantity: " + penQuantity);
+        console.log("Pen Cost: ₹" + penCost);
+
+        console.log("Pencil Price: ₹" + pencilPrice);
+        console.log("Pencil Quantity: " + pencilQuantity);
+        console.log("Pencil Cost: ₹" + pencilCost);
+
+        console.log("------------------------");
+        console.log("Total Bill: ₹" + totalBill);
+        console.log("Amount Paid: ₹" + amountPaid);
+        console.log("Remaining Amount: ₹" + remainingAmount);
+    </script>
+</body>
+</html>
